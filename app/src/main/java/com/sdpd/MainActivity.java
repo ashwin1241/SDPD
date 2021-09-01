@@ -14,20 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("First lab app");
 
-        surprisemf = findViewById(R.id.smf);
-        surprisemf.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                surprisemf.setText("Surprise motherfucker!");
-                surprisemf.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        surprisemf.setText("Fuck you!");
-                    }
-                });
-            }
-        });
 
     }
 }

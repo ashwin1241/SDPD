@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Lab_2 extends AppCompatActivity {
 
@@ -30,6 +31,8 @@ public class Lab_2 extends AppCompatActivity {
     private Button dec;
     private Button equ;
     private Button clr;
+    private int flag=1,decflag=0;
+    private Button a1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +41,24 @@ public class Lab_2 extends AppCompatActivity {
         getSupportActionBar().setTitle("Lab 2");
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        a1 = findViewById(R.id.a1);
+        a1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Lab_2.this, Double.parseDouble("\n0\n")+"", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        result = findViewById(R.id.result);
+
         primary_display = findViewById(R.id.primary_display);
         clr = findViewById(R.id.clr);
         clr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 primary_display.setText("");
+                result.setText("");
+                flag++;
             }
         });
         b0 = findViewById(R.id.b0);
@@ -51,6 +66,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"0");
+                flag=0;
             }
         });
         b1 = findViewById(R.id.b1);
@@ -58,6 +74,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"1");
+                flag=0;
             }
         });
         b2 = findViewById(R.id.b2);
@@ -65,6 +82,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"2");
+                flag=0;
             }
         });
         b3 = findViewById(R.id.b3);
@@ -72,6 +90,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"3");
+                flag=0;
             }
         });
         b4 = findViewById(R.id.b4);
@@ -79,6 +98,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"4");
+                flag=0;
             }
         });
         b5 = findViewById(R.id.b5);
@@ -86,6 +106,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"5");
+                flag=0;
             }
         });
         b6 = findViewById(R.id.b6);
@@ -93,6 +114,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"6");
+                flag=0;
             }
         });
         b7 = findViewById(R.id.b7);
@@ -100,6 +122,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"7");
+                flag=0;
             }
         });
         b8 = findViewById(R.id.b8);
@@ -107,6 +130,7 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"8");
+                flag=0;
             }
         });
         b9 = findViewById(R.id.b9);
@@ -114,50 +138,128 @@ public class Lab_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 primary_display.setText(primary_display.getText()+"9");
+                flag=0;
             }
         });
         add = findViewById(R.id.b_add);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                primary_display.setText(primary_display.getText()+"\n+\n");
+                if(flag==0)
+                {
+                    primary_display.setText(primary_display.getText()+"+");
+                    flag++;
+                    decflag=0;
+                }
             }
         });
         mul = findViewById(R.id.b_mul);
         mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                primary_display.setText(primary_display.getText()+"\nx\n");
+                if(flag==0)
+                {
+                    primary_display.setText(primary_display.getText()+"x");
+                    flag++;
+                    decflag=0;
+                }
             }
         });
         div = findViewById(R.id.b_div);
         div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                primary_display.setText(primary_display.getText()+"\n/\n");
+                if(flag==0)
+                {
+                    primary_display.setText(primary_display.getText()+"/");
+                    flag++;
+                    decflag=0;
+                }
             }
         });
         sub = findViewById(R.id.b_sub);
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                primary_display.setText(primary_display.getText()+"\n-\n");
+                if(flag==0)
+                {
+                    primary_display.setText(primary_display.getText()+"-");
+                    flag++;
+                    decflag=0;
+                }
             }
         });
         dec = findViewById(R.id.b_dec);
         dec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                primary_display.setText(primary_display.getText()+".");
+                if(decflag==0)
+                {
+                    if(flag==0)
+                    {
+                        primary_display.setText(primary_display.getText()+".");
+                    }
+                    else
+                    {
+                        primary_display.setText(primary_display.getText()+"0.");
+                    }
+                    flag++;
+                    decflag++;
+                }
             }
         });
         equ = findViewById(R.id.b_equ);
         equ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(flag==0)
+                {
+                    calculate();
+                }
+                else
+                {
+                    Toast.makeText(Lab_2.this, "Invalid equation", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
     }
+
+    private void calculate()
+    {
+        double answer = 0.0;
+        String s = primary_display.getText().toString().trim();
+        String t = "";
+        int i=0;
+        for(i=0;i<s.length();i++)
+        {
+            if((s.charAt(i)>='0'&&s.charAt(i)<='9')||s.charAt(i)=='.')
+            {
+                t+=s.charAt(i);
+            }
+            else if(s.charAt(i)=='+')
+            {
+                answer+=Float.parseFloat(t);
+                t="";
+            }
+            else if(s.charAt(i)=='-')
+            {
+                answer-=Double.parseDouble(t);
+                t="";
+            }
+            else if(s.charAt(i)=='*')
+            {
+                answer*=Double.parseDouble(t);
+                t="";
+            }
+            else if(s.charAt(i)=='/')
+            {
+                answer/=Double.parseDouble(t);
+                t="";
+            }
+        }
+        Toast.makeText(Lab_2.this, answer+"", Toast.LENGTH_SHORT).show();
+        //result.setText(answer+"");
+    }
+
 }

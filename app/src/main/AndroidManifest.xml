@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDPD">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Lab_2"
+            android:exported="true"
+            android:parentActivityName=".Lab_1"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Lab_1"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

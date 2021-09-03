@@ -4,11 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_2.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab2.xml" value="0.264" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Android_Projects/sdpd/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22631578947368422" />
-        <entry key="..\:/Android_Projects/sdpd/app/src/main/res/drawable/custom_shape.xml" value="0.22631578947368422" />
-        <entry key="..\:/Android_Projects/sdpd/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22631578947368422" />
-        <entry key="..\:/Android_Projects/sdpd/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/lab_1.xml" value="0.264" />
       </map>
     </option>
   </component>

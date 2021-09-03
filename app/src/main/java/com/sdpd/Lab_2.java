@@ -59,6 +59,7 @@ public class Lab_2 extends AppCompatActivity {
                 primary_display.setText("");
                 result.setText("");
                 flag++;
+                decflag=0;
             }
         });
         b0 = findViewById(R.id.b0);
@@ -277,8 +278,8 @@ public class Lab_2 extends AppCompatActivity {
             answer /= Double.parseDouble(t);
             t = "";
         }
-        Toast.makeText(Lab_2.this, answer+"", Toast.LENGTH_SHORT).show();
-        //result.setText(answer+"");
+        //Toast.makeText(Lab_2.this, answer+"", Toast.LENGTH_SHORT).show();
+        result.setText(answer+"");
     }
 
 }

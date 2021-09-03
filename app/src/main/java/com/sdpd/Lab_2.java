@@ -230,6 +230,7 @@ public class Lab_2 extends AppCompatActivity {
         double answer = 0.0;
         String s = primary_display.getText().toString().trim();
         String t = "";
+        char oper='+';
         int i=0;
         for(i=0;i<s.length();i++)
         {
@@ -237,26 +238,44 @@ public class Lab_2 extends AppCompatActivity {
             {
                 t+=s.charAt(i);
             }
-            else if(s.charAt(i)=='+')
+            else
             {
-                answer+=Float.parseFloat(t);
-                t="";
+                if (oper == '+')
+                {
+                    answer += Double.parseDouble(t);
+                    t = "";
+                } else if (oper == '-')
+                {
+                    answer -= Double.parseDouble(t);
+                    t = "";
+                } else if (oper == 'x')
+                {
+                    answer *= Double.parseDouble(t);
+                    t = "";
+                } else if (oper == '/')
+                {
+                    answer /= Double.parseDouble(t);
+                    t = "";
+                }
+                oper = s.charAt(i);
             }
-            else if(s.charAt(i)=='-')
-            {
-                answer-=Double.parseDouble(t);
-                t="";
-            }
-            else if(s.charAt(i)=='*')
-            {
-                answer*=Double.parseDouble(t);
-                t="";
-            }
-            else if(s.charAt(i)=='/')
-            {
-                answer/=Double.parseDouble(t);
-                t="";
-            }
+        }
+        if (oper == '+')
+        {
+            answer += Double.parseDouble(t);
+            t = "";
+        } else if (oper == '-')
+        {
+            answer -= Double.parseDouble(t);
+            t = "";
+        } else if (oper == 'x')
+        {
+            answer *= Double.parseDouble(t);
+            t = "";
+        } else if (oper == '/')
+        {
+            answer /= Double.parseDouble(t);
+            t = "";
         }
         Toast.makeText(Lab_2.this, answer+"", Toast.LENGTH_SHORT).show();
         //result.setText(answer+"");

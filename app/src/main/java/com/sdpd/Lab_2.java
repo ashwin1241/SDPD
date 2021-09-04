@@ -32,7 +32,6 @@ public class Lab_2 extends AppCompatActivity {
     private Button equ;
     private Button clr;
     private int flag=1,decflag=0;
-    private Button a1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +39,6 @@ public class Lab_2 extends AppCompatActivity {
         setContentView(R.layout.activity_lab2);
         getSupportActionBar().setTitle("Lab 2");
         getSupportActionBar().setHomeButtonEnabled(true);
-
-        a1 = findViewById(R.id.a1);
-        a1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(Lab_2.this, Double.parseDouble("\n0\n")+"", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         result = findViewById(R.id.result);
 

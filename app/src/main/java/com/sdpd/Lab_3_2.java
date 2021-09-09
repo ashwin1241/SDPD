@@ -38,10 +38,6 @@ public class Lab_3_2 extends AppCompatActivity {
                 {
                     url = "https://" + url;
                 }
-                if (!url.endsWith(".com"))
-                {
-                    url += ".com";
-                }
                 intent.setData(Uri.parse(url));
                 startActivity(Intent.createChooser(intent,"Open site with:"));
             }

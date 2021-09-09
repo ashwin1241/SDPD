@@ -4,10 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22631578947368422" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable/custom_et.xml" value="0.22631578947368422" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable/custom_shape.xml" value="0.22631578947368422" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22631578947368422" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable/ic_padlock.xml" value="0.22631578947368422" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/drawable/ic_user.xml" value="0.22631578947368422" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_2.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab1.xml" value="0.21271929824561403" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab2.xml" value="0.264" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab3.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab31a.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab31b.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab32.xml" value="0.21271929824561403" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_lab_1.xml" value="0.21271929824561403" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/custom_et.xml" value="0.21271929824561403" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/layout/lab_1.xml" value="0.264" />
         <entry key="..\:/Android_Projects/SDPD/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22631578947368422" />
       </map>

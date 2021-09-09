@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lab_3_2">
+
+    <TextView
+        android:id="@+id/enterhdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amaranth"
+        android:text="Enter a website url:"/>
+
+    <EditText
+        android:id="@+id/site_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterhdg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_et"
+        android:drawableStart="@drawable/ic_internet"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:ems="15"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:shadowColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="#50a2df"/>
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/site_url"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_et"
+        android:text="Go"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+
+</RelativeLayout>

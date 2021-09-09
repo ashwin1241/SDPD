@@ -10,10 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDPD">
         <activity
+            android:name=".Lab_3_2"
+            android:exported="true"
+            android:parentActivityName=".Lab_3_1_a"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Lab_3_1_b"
+            android:exported="true"
+            android:parentActivityName=".Lab_3_1_a"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lab_3_1_a"
+            android:exported="true"
+            android:parentActivityName=".Lab_2"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Lab_2"
             android:exported="true"
             android:parentActivityName=".Lab_1"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Lab_1"
             android:exported="true"

@@ -2,11 +2,10 @@ package com.sdpd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +31,7 @@ public class Lab_2 extends AppCompatActivity {
     private Button equ;
     private Button clr;
     private int flag=1,decflag=0;
+    private Button next_lab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,15 @@ public class Lab_2 extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
         result = findViewById(R.id.result);
+
+        next_lab = findViewById(R.id.lab_3_1_proceed);
+        next_lab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lab_2.this, Lab_3_1_a.class);
+                startActivity(intent);
+            }
+        });
 
         primary_display = findViewById(R.id.primary_display);
         clr = findViewById(R.id.clr);

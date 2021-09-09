@@ -30,7 +30,7 @@ public class Lab_3_2 extends AppCompatActivity {
             public void onClick(View view) {
                 url = site_url.getText().toString().trim();
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                if(!url.startsWith("www."))
+                if(!url.startsWith("www.")&&(!(url.startsWith("http://") || url.startsWith("https://"))))
                 {
                     url = "https://www." + url;
                 }

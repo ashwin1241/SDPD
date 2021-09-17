@@ -4,24 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lab_4"
-    android:scrollbars="vertical">
+    tools:context=".Drinks_Categories">
 
-    <ImageView
-        android:id="@+id/activity_logo"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:src="@drawable/starbuzz_logo"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_logo"
         android:padding="10dp"
         android:orientation="vertical">
         <ListView
-            android:id="@+id/main_list"
+            android:id="@+id/drink_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>

@@ -183,11 +183,14 @@
         android:id="@+id/lab_3_1_proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="10dp"
-        android:textAllCaps="false"
-        android:text="Click for\nLab-3_1"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Click for\nLab-3_1"
+        android:textAllCaps="false" />
 
 
 </RelativeLayout>

@@ -15,6 +15,7 @@ public class Lab_3_2 extends AppCompatActivity {
     private EditText site_url;
     private Button go_button;
     private String url;
+    private Button next_lab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,15 @@ public class Lab_3_2 extends AppCompatActivity {
         setContentView(R.layout.activity_lab32);
         getSupportActionBar().setTitle("Lab 3");
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        next_lab = findViewById(R.id.lab_4_proceed);
+        next_lab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lab_3_2.this, Lab_4.class);
+                startActivity(intent);
+            }
+        });
 
         site_url = findViewById(R.id.site_url);
         go_button = findViewById(R.id.go_button);

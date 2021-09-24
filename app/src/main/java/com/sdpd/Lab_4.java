@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ public class Lab_4 extends AppCompatActivity {
     private ListView listView;
     private ArrayList<String> items0;
     private AdapterView.OnItemClickListener listener;
+    private Button next_lab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,15 @@ public class Lab_4 extends AppCompatActivity {
         setContentView(R.layout.activity_lab4);
         getSupportActionBar().setTitle("Lab 4");
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        next_lab = findViewById(R.id.lab_5_proceed);
+        next_lab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lab_4.this, Lab_5.class);
+                startActivity(intent);
+            }
+        });
 
         listener = new AdapterView.OnItemClickListener() {
             @Override

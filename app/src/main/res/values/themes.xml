@@ -13,4 +13,30 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.App_Custom" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#54e2db</item>
+        <item name="colorPrimaryVariant">#00827a</item>
+        <item name="colorOnPrimary">#fffecf</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#61ff7b</item>
+        <item name="colorSecondaryVariant">#006e12</item>
+        <item name="colorOnSecondary">#363636</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.NO_ACTION_BAR" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#54e2db</item>
+        <item name="colorPrimaryVariant">#00827a</item>
+        <item name="colorOnPrimary">#fffecf</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#61ff7b</item>
+        <item name="colorSecondaryVariant">#006e12</item>
+        <item name="colorOnSecondary">#363636</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
 </resources>

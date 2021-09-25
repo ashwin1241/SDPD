@@ -14,13 +14,7 @@
             android:exported="true"
             android:parentActivityName=".Lab_4"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.NO_ACTION_BAR">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.App_Custom"/>
         <activity
             android:name=".Locations"
             android:exported="true"
@@ -44,7 +38,13 @@
             android:name=".Lab_4"
             android:exported="true"
             android:parentActivityName=".Lab_3_2"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Lab_3_2"
             android:exported="true"

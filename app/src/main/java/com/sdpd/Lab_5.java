@@ -17,9 +17,9 @@ public class Lab_5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab5);
 
-        toolbar = findViewById(R.id.mtoolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Lab 5");
+
+        getSupportActionBar().setTitle("PVR Cinemas");
+        getSupportActionBar().setHomeButtonEnabled(true);
 
     }
 
@@ -29,13 +29,4 @@ public class Lab_5 extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId())
-        {
-            case R.id.add_item:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<item
-    android:id="@+id/add_item"
-    android:icon="@drawable/ic_round_add_40"
-    app:showAsAction="ifRoom"
-    android:title="Add" />
-
+    <item
+        android:id="@+id/search_movie"
+        android:icon="@drawable/ic_round_search_40"
+        app:showAsAction="ifRoom"
+        android:title="Search" />
+    <item
+        android:id="@+id/like_movie"
+        android:icon="@drawable/ic_like_40"
+        app:showAsAction="ifRoom"
+        android:title="Like" />
+    <item
+        android:id="@+id/book_ticket"
+        android:title="Book Ticket" />
+    <item
+        android:id="@+id/cancel_ticket"
+        android:title="Cancel Ticket" />
+    <item
+        android:id="@+id/Edit_ticket"
+        android:title="Edit Bookings" />
 </menu>

@@ -9,8 +9,7 @@
         android:id="@+id/mtoolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
         android:background="#54e2db"
-        app:titleTextColor="@color/white"/>
+        app:titleTextColor="@color/white" />
 
 </com.google.android.material.appbar.AppBarLayout>

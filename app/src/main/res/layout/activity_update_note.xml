@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNote">
+
+    <TextView
+        android:id="@+id/hdg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Update Note"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/note_title_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hdg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:hint="Title"
+        />
+
+    <EditText
+        android:id="@+id/note_details_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_title_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:hint="Details"
+        />
+
+    <EditText
+        android:id="@+id/note_time_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_details_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="Finish by"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <CheckBox
+        android:id="@+id/mark_as_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/note_time_edt"
+        android:text="Mark as done"/>
+
+    <Button
+        android:id="@+id/update_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mark_as_done"/>
+
+    <Button
+        android:id="@+id/delete_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Delete"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/update_note_button"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

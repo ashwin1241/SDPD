@@ -56,10 +56,10 @@ public class UpdateNote extends AppCompatActivity {
         details = findViewById(R.id.note_details_edt);
         time = findViewById(R.id.note_time_edt);
         checkBox = findViewById(R.id.mark_as_done);
-        if(checkBox.isChecked()==true)
-            status = true;
-        else
-            status = false;
+        checkBox.setChecked(data.isCompleted());
+        title.setText(data.getTitle());
+        details.setText(data.getDetails());
+        time.setText(data.getTime());
         update_note = findViewById(R.id.update_note_button);
         update_note.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +69,10 @@ public class UpdateNote extends AppCompatActivity {
 
                     @Override
                     protected Void doInBackground(Void... voids) {
+                        if(checkBox.isChecked()==true)
+                            status = true;
+                        else
+                            status = false;
                         data.setCompleted(status);
                         data.setTitle(title.getText().toString().trim());
                         data.setDetails(details.getText().toString().trim());

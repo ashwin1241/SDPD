@@ -10,15 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDPD">
         <activity
-            android:name=".AddNote"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:name=".AddWord"
+            android:exported="true" />
         <activity
-            android:name=".UpdateNote"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".Notes"
+            android:name=".Lab_6"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -27,6 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddNote"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateNote"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notes"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Lab_5"
             android:exported="true"
@@ -56,7 +63,7 @@
             android:name=".Lab_4"
             android:exported="true"
             android:parentActivityName=".Lab_3_2"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Lab_3_2"
             android:exported="true"

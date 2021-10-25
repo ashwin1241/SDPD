@@ -82,13 +82,14 @@ public class Lab_6 extends AppCompatActivity {
                     @Override
                     protected void onPostExecute(Void unused) {
                         super.onPostExecute(unused);
+                        buildRecyclerView();
                         Toast.makeText(Lab_6.this, "Word deleted", Toast.LENGTH_SHORT).show();
-                        word_adapter.notifyItemRemoved(position);
                     }
 
                     @Override
                     protected Void doInBackground(Void... voids) {
                         word_dao.delete(item);
+                        word_List = word_dao.getWords();
                         return null;
                     }
                 }

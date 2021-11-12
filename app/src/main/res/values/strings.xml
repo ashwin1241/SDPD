@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">SDPD</string>
+    <string name="title_activity_bits_and_pizza">Bits_And_Pizza</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Pizza</string>
+    <string name="tab_text_3">Pasta</string>
+    <string name="tab_text_4">Stores</string>
+    <string name="description">Since we opened our stores in 1970, Bits and Pizza has built its reputation as one of the best digital Italian restaurants. Some people believe eating out is about being with your friends and family. We believe that good food is best enjoyed while staring at your phone.</string>
+    <string-array name="pizza_list">
+        <item>Country Special</item>
+        <item>Farmhouse</item>
+        <item>Peppy Paneer</item>
+        <item>Extra cheese</item>
+        <item>Pepperoni</item>
+    </string-array>
+    <string-array name="pasta_list">
+        <item>Lasagne</item>
+        <item>Ravioli</item>
+        <item>Penne</item>
+        <item>Rigatoni</item>
+        <item>Fusilli</item>
+    </string-array>
+    <string-array name="store_list">
+        <item>Detroit</item>
+        <item>New York</item>
+        <item>LA</item>
+        <item>Las Vegas</item>
+        <item>San Fransisco</item>
+    </string-array>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
